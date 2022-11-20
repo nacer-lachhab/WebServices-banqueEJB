@@ -1,0 +1,569 @@
+{
+	"info": {
+		"_postman_id": "c2a2a6bf-d6f3-4189-a1ab-75828d8f4aca",
+		"name": "BanqueEJB-CoucheWeb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20775113"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/coucheWeb_banqueEJB/compte/creer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "solde",
+							"value": "3756",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/coucheWeb_banqueEJB/compte/creer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coucheWeb_banqueEJB",
+						"compte",
+						"creer"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/coucheWeb_banqueEJB/compte/creer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "solde",
+									"value": "3756",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/coucheWeb_banqueEJB/compte/creer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coucheWeb_banqueEJB",
+								"compte",
+								"creer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "70"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Nov 2022 17:43:20 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"dateCreation\": \"2022-11-20T17:43:20.951Z[UTC]\",\n    \"id\": 6,\n    \"solde\": 3756\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/coucheWeb_banqueEJB/compte/list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/coucheWeb_banqueEJB/compte/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coucheWeb_banqueEJB",
+						"compte",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/coucheWeb_banqueEJB/compte/list",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/coucheWeb_banqueEJB/compte/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coucheWeb_banqueEJB",
+								"compte",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "439"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Nov 2022 17:49:05 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"dateCreation\": \"2022-11-20T01:00:28.696Z[UTC]\",\n        \"id\": 1,\n        \"solde\": 110.66999999999999\n    },\n    {\n        \"dateCreation\": \"2022-11-20T01:01:28.696Z[UTC]\",\n        \"id\": 2,\n        \"solde\": 1699.33\n    },\n    {\n        \"dateCreation\": \"2022-11-20T01:02:28.696Z[UTC]\",\n        \"id\": 3,\n        \"solde\": 590\n    },\n    {\n        \"dateCreation\": \"2022-11-20T01:16:48.021Z[UTC]\",\n        \"id\": 4,\n        \"solde\": 2500\n    },\n    {\n        \"dateCreation\": \"2022-11-20T01:21:17.734Z[UTC]\",\n        \"id\": 5,\n        \"solde\": 2500\n    },\n    {\n        \"dateCreation\": \"2022-11-20T17:43:20.951Z[UTC]\",\n        \"id\": 6,\n        \"solde\": 3756\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/coucheWeb_banqueEJB/compte/versement",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "codeCte",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "montant",
+							"value": "267.68",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/coucheWeb_banqueEJB/compte/versement",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coucheWeb_banqueEJB",
+						"compte",
+						"versement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/coucheWeb_banqueEJB/compte/get/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/coucheWeb_banqueEJB/compte/remove/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coucheWeb_banqueEJB",
+						"compte",
+						"remove",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/coucheWeb_banqueEJB/compte/get/5",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/coucheWeb_banqueEJB/compte/get/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coucheWeb_banqueEJB",
+						"compte",
+						"get",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/coucheWeb_banqueEJB/compte/get/5",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/coucheWeb_banqueEJB/compte/get/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coucheWeb_banqueEJB",
+								"compte",
+								"get",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "70"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Nov 2022 17:55:02 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"dateCreation\": \"2022-11-20T01:21:17.734Z[UTC]\",\n    \"id\": 5,\n    \"solde\": 2500\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/coucheWeb_banqueEJB/compte/edit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "codeCteSrc",
+							"value": "2",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "codeCteSrc",
+							"value": "5",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "montant",
+							"value": "173",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "newSolde",
+							"value": "3555",
+							"type": "text"
+						},
+						{
+							"key": "codeCte",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/coucheWeb_banqueEJB/compte/edit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coucheWeb_banqueEJB",
+						"compte",
+						"edit"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8080/coucheWeb_banqueEJB/compte/edit",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "codeCteSrc",
+									"value": "2",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "codeCteSrc",
+									"value": "5",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "montant",
+									"value": "173",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "newSolde",
+									"value": "3555",
+									"type": "text"
+								},
+								{
+									"key": "codeCte",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/coucheWeb_banqueEJB/compte/edit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coucheWeb_banqueEJB",
+								"compte",
+								"edit"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Nov 2022 18:26:55 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"solde\": 3555,\n    \"dateCreation\": 1668906028696\n}"
+				},
+				{
+					"name": "http://localhost:8080/coucheWeb_banqueEJB/compte/edit",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "codeCteSrc",
+									"value": "2",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "codeCteSrc",
+									"value": "5",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "montant",
+									"value": "173",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "newSolde",
+									"value": "3555",
+									"type": "text"
+								},
+								{
+									"key": "codeCte",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/coucheWeb_banqueEJB/compte/edit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"coucheWeb_banqueEJB",
+								"compte",
+								"edit"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 20 Nov 2022 18:26:55 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"solde\": 3555,\n    \"dateCreation\": 1668906028696\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8080/coucheWeb_banqueEJB/compte/versement",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "codeCte",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "montant",
+							"value": "136",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/coucheWeb_banqueEJB/compte/versement",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coucheWeb_banqueEJB",
+						"compte",
+						"versement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/coucheWeb_banqueEJB/compte/virement",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "codeCteSrc",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "codeCteDest",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "montant",
+							"value": "107",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/coucheWeb_banqueEJB/compte/virement",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coucheWeb_banqueEJB",
+						"compte",
+						"virement"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
